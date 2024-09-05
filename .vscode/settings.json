@@ -1,8 +1,0 @@
-{
-    "Lua.diagnostics.disable": [
-        "different-requires"
-    ],
-    "Lua.diagnostics.globals": [
-        "vim"
-    ]
-}
