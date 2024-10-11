@@ -3,7 +3,7 @@ local capabilities = require("plugins.configs.lspconfig").capabilities
 
 local lspconfig = require("lspconfig")
 
-local servers = {"tsserver", "tailwindcss", "eslint", "prismals", "gopls"}
+local servers = {"ts_ls", "tailwindcss", "eslint", "prismals", "gopls", "svelte", "pyright"}
 
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
