@@ -1,0 +1,19 @@
+-- local autocmd = vim.api.nvim_create_autocmd
+
+-- Auto resize panes when resizing nvim window
+-- autocmd("VimResized", {
+--   pattern = "*",
+--   command = "tabdo wincmd =",
+-- })
+--
+--
+-- require('neotest').setup {
+--  adapters = {
+--    require('neotest-haskell') {
+--      -- Default: Use stack if possible and then try cabal
+--      build_tools = { 'stack', 'cabal' },
+--      -- Default: Check for tasty first and then try hspec
+--      frameworks = { 'tasty', 'hspec', 'sydtest' },
+--    },
+--  },
+--}
