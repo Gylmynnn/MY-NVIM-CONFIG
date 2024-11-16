@@ -2,6 +2,19 @@ local opt = vim.opt
 local g = vim.g
 local config = require("core.utils").load_config()
 
+-- Set font with size
+vim.o.guifont = "MesloLGLDZ Nerd Font:h12"
+
+-- Transparency (Neovide specific)
+g.neovide_transparency = 0.8
+g.neovide_fullscreen = true
+-- Cursor effect (Neovide specific)
+g.neovide_cursor_vfx_mode = "railgun"
+g.neovide_padding_top = 6
+g.neovide_padding_bottom = 0
+g.neovide_padding_right = 0
+g.neovide_padding_left = 0
+
 -------------------------------------- globals -----------------------------------------
 g.nvchad_theme = config.ui.theme
 g.base46_cache = vim.fn.stdpath "data" .. "/nvchad/base46/"
