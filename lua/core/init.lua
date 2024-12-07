@@ -3,22 +3,22 @@ local g = vim.g
 local config = require("core.utils").load_config()
 
 -- Set font with size
-vim.o.guifont = "MesloLGLDZ Nerd Font:h12"
+vim.o.guifont = "JetBrainsMono Nerd Font:h12"
 
 -- Transparency (Neovide specific)
-g.neovide_transparency = 0.8
+g.neovide_transparency = 1.0
 g.neovide_fullscreen = true
 -- Cursor effect (Neovide specific)
 g.neovide_cursor_vfx_mode = "railgun"
-g.neovide_padding_top = 6
-g.neovide_padding_bottom = 0
-g.neovide_padding_right = 0
-g.neovide_padding_left = 0
+g.neovide_padding_top = 50
+g.neovide_padding_bottom = 20
+g.neovide_padding_right = 50
+g.neovide_padding_left = 50
 
 -------------------------------------- globals -----------------------------------------
 g.nvchad_theme = config.ui.theme
 g.base46_cache = vim.fn.stdpath "data" .. "/nvchad/base46/"
-g.toggle_theme_icon = "   "
+g.toggle_theme_icon = "ligichi"
 g.transparency = config.ui.transparency
 
 -------------------------------------- options ------------------------------------------
@@ -30,10 +30,10 @@ opt.cursorline = true
 
 -- Indenting
 opt.expandtab = true
-opt.shiftwidth = 2
+opt.shiftwidth = 3
 opt.smartindent = true
-opt.tabstop = 2
-opt.softtabstop = 2
+opt.tabstop = 3
+opt.softtabstop = 3
 
 opt.fillchars = { eob = " " }
 opt.ignorecase = true

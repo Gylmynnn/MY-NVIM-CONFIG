@@ -15,6 +15,9 @@ local plugins = {
         "tailwindcss-language-server",
         "typescript-language-server",
         "prisma-language-server",
+        "svelte-language-server",
+        "gopls",
+        "pyright"
       },
     },
   },
