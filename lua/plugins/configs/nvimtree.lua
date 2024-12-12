@@ -15,7 +15,7 @@ local options = {
   view = {
     adaptive_size = false,
     side = "left",
-    width = 20,
+    width = 26,
     preserve_window_proportions = true,
   },
   git = {

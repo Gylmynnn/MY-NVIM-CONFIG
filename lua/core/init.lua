@@ -3,7 +3,7 @@ local g = vim.g
 local config = require("core.utils").load_config()
 
 -- Set font with size
-vim.o.guifont = "JetBrainsMono Nerd Font:h12"
+vim.o.guifont = "CaskaydiaCove Nerd Font Mono:h12"
 
 -- Transparency (Neovide specific)
 g.neovide_transparency = 1.0
@@ -30,10 +30,10 @@ opt.cursorline = true
 
 -- Indenting
 opt.expandtab = true
-opt.shiftwidth = 3
+opt.shiftwidth = 4
 opt.smartindent = true
-opt.tabstop = 3
-opt.softtabstop = 3
+opt.tabstop = 4
+opt.softtabstop = 4
 
 opt.fillchars = { eob = " " }
 opt.ignorecase = true
