@@ -36,17 +36,17 @@ M.ui = {
   telescope = { style = "borderless" }, -- borderless / bordered
 
   ------------------------------- nvchad_ui modules -----------------------------
-  statusline = {
-    theme = "default", -- default/vscode/vscode_colored/minimal
-    -- default/round/block/arrow separators work only for default statusline theme
-    -- round and block will work for minimal theme only
-    separator_style = "default",
-    overriden_modules = nil,
-  },
+  -- statusline = {
+  --   theme = "default", -- default/vscode/vscode_colored/minimal
+  --   -- default/round/block/arrow separators work only for default statusline theme
+  --   -- round and block will work for minimal theme only
+  --   separator_style = "default",
+  --   overriden_modules = nil,
+  -- },
 
   -- lazyload it when there are 1+ buffers
   tabufline = {
-    show_numbers = false,
+    show_numbers = true,
     enabled = true,
     lazyload = true,
     overriden_modules = nil,
@@ -54,7 +54,7 @@ M.ui = {
 
   -- nvdash (dashboard)
   nvdash = {
-    load_on_startup = false,
+    load_on_startup = true,
 
     header = {
       "           ▄ ▄                   ",

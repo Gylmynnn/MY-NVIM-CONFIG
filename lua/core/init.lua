@@ -2,24 +2,13 @@ local opt = vim.opt
 local g = vim.g
 local config = require("core.utils").load_config()
 
--- Set font with size
-vim.o.guifont = "CaskaydiaCove Nerd Font Mono:h12"
-
--- Transparency (Neovide specific)
-g.neovide_transparency = 1.0
-g.neovide_fullscreen = true
--- Cursor effect (Neovide specific)
-g.neovide_cursor_vfx_mode = "railgun"
-g.neovide_padding_top = 50
-g.neovide_padding_bottom = 20
-g.neovide_padding_right = 50
-g.neovide_padding_left = 50
-
 -------------------------------------- globals -----------------------------------------
 g.nvchad_theme = config.ui.theme
 g.base46_cache = vim.fn.stdpath "data" .. "/nvchad/base46/"
-g.toggle_theme_icon = "ligichi"
+g.toggle_theme_icon = "ギルマン"
 g.transparency = config.ui.transparency
+
+opt.cursorline = false;
 
 -------------------------------------- options ------------------------------------------
 opt.laststatus = 3 -- global statusline
@@ -30,10 +19,10 @@ opt.cursorline = true
 
 -- Indenting
 opt.expandtab = true
-opt.shiftwidth = 4
+opt.shiftwidth = 3
 opt.smartindent = true
-opt.tabstop = 4
-opt.softtabstop = 4
+opt.tabstop = 3
+opt.softtabstop = 3
 
 opt.fillchars = { eob = " " }
 opt.ignorecase = true
@@ -42,13 +31,13 @@ opt.mouse = "a"
 
 -- Numbers
 opt.number = true
-opt.numberwidth = 2
-opt.ruler = false
+opt.numberwidth = 5
+opt.ruler = true
 
 -- disable nvim intro
 opt.shortmess:append "sI"
 
-opt.signcolumn = "yes"
+opt.signcolumn = "no"
 opt.splitbelow = true
 opt.splitright = true
 opt.termguicolors = true
